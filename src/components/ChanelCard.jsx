@@ -10,11 +10,11 @@ const ChanelCard = ({ channelDetail, marginTop }) => (
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      width: { xs: "356px", md: "270px" },
+      width: { sm: "100%", md: "360px" },
 
       margin: "auto",
       marginTop,
-      height: "80%",
+      height: { md: "80%", sm: "100% " },
     }}
   >
     <Link to={`/channel/${channelDetail?.id?.channelId}`}>
@@ -25,6 +25,7 @@ const ChanelCard = ({ channelDetail, marginTop }) => (
           justifyContent: "center",
           textAlign: "center",
           color: "#fff",
+          alignItems: "center",
         }}
       >
         <CardMedia

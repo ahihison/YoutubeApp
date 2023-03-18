@@ -11,15 +11,17 @@ import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import TheaterComedyIcon from "@mui/icons-material/TheaterComedy";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
-
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
 export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
 
 export const categories = [
-  { name: "New", icon: <HomeIcon /> },
-  { name: "JS Mastery", icon: <CodeIcon /> },
+  { name: "Home", icon: <HomeIcon /> },
+  { name: "JS Mastery", icon: <IoLogoJavascript /> },
   { name: "Coding", icon: <CodeIcon /> },
-  { name: "ReactJS", icon: <CodeIcon /> },
-  { name: "NextJS", icon: <CodeIcon /> },
+  { name: "ReactJS", icon: <FaReact /> },
+  { name: "NextJS", icon: <TbBrandNextjs /> },
   { name: "Music", icon: <MusicNoteIcon /> },
   { name: "Education", icon: <SchoolIcon /> },
   { name: "Podcast", icon: <GraphicEqIcon /> },
@@ -32,6 +34,19 @@ export const categories = [
   { name: "Comedy", icon: <TheaterComedyIcon /> },
   { name: "Gym", icon: <FitnessCenterIcon /> },
   { name: "Crypto", icon: <DeveloperModeIcon /> },
+];
+export const typeCategories = [
+  { name: "Tất cả" },
+  { name: "Trò chơi" },
+  { name: "Trực tiếp" },
+  { name: "Âm nhạc" },
+  { name: "Danh sách kết hợp" },
+  { name: "Hoạt họa" },
+  { name: "Bóng đá" },
+  { name: "Nấu ăn" },
+  { name: "Mới tải lên gần đây" },
+  { name: "Đã xem" },
+  { name: "Đề xuất mới" },
 ];
 
 export const demoThumbnailUrl = "https://i.ibb.co/G2L2Gwp/API-Course.png";

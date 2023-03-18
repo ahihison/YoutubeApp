@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { Typography, Card, CardContent, CardMedia } from "@mui/material";
+import { Typography, Card, CardContent, CardMedia, Box } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 import {
   demoThumbnailUrl,
@@ -15,24 +15,35 @@ function VideoCard({
     snippet,
   },
 }) {
-  console.log(videoId, snippet);
-
   return (
     <Card
       sx={{
-        width: { xs: "100%", sm: "358px", md: "270px" },
+        width: { xs: "100%", sm: "358px", md: "360px" },
         boxShadow: "none",
-        borderRadius: "12px",
+        borderRadius: 0,
+        height: "303px",
+        backgroundColor: "#0f0f0f",
       }}
     >
-      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-        <CardMedia
-          image={snippet?.thumbnails?.high?.url}
-          alt={snippet?.title}
-          sx={{ width: { xs: "100%", sm: "358px", md: "270" }, height: 150 }}
-        ></CardMedia>
-      </Link>
-      <CardContent sx={{ backgroundColor: "#1e1e1e", height: "106px" }}>
+      <Box sx={{ borderRadius: "12px" }}>
+        <Link to={videoId ? `/video/${videoId}` : demoVideoUrl} width="100%">
+          <CardMedia
+            image={snippet?.thumbnails?.high?.url}
+            alt={snippet?.title}
+            sx={{
+              width: { xs: "100%", sm: "358px", md: "300" },
+              height: 203,
+
+              borderRadius: "12px",
+              objectFit: "cover",
+            }}
+          ></CardMedia>
+        </Link>
+      </Box>
+
+      <CardContent
+        sx={{ backgroundColor: "#0f0f0f", height: "106px", width: "100%" }}
+      >
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
           <Typography variant="subtitle1" fontWeight="bold" color="#fff">
             {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}

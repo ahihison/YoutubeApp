@@ -7,3 +7,5 @@ export { default as SearchBar } from "./SearchBar";
 export { default as Sidebar } from "./Sidebar";
 export { default as Videos } from "./Videos";
 export { default as ChanelCard } from "./ChanelCard";
+export { default as Decription } from "./Decription";
+export { default as TypeCatecories } from "./TypeCatecories";

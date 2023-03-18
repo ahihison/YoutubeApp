@@ -1,0 +1,12 @@
+/* .scroll-nav {
+  overflow: auto !important;
+} */
+.scroll-nav:active::-webkit-scrollbar-thumb,
+.scroll-nav:focus::-webkit-scrollbar-thumb,
+.scroll-nav:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+.scroll-nav::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  visibility: hidden;
+}
